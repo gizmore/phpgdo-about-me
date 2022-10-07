@@ -32,7 +32,7 @@ final class Module_AboutMe extends GDO_Module
 	public function getUserSettingBlobs() : array
 	{
 		return [
-			GDT_Message::make('about_me')->max(4096),
+			GDT_Message::make('about_me')->max(4096)->label('module_aboutme'),
 		];
 	}
 	
