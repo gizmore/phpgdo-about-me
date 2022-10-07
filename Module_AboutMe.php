@@ -18,6 +18,13 @@ final class Module_AboutMe extends GDO_Module
 	public function getDependencies() : array
 	{
 		return [
+			'Account',
+		];
+	}
+	
+	public function getFriendencies() : array
+	{
+		return [
 			'Register',
 		];
 	}
@@ -34,6 +41,11 @@ final class Module_AboutMe extends GDO_Module
 		return [
 			'about_me' => [GDT_ACLRelation::MEMBERS, 0, null],
 		];
+	}
+	
+	public function onLoadLanguage(): void
+	{
+		$this->loadLanguage('lang/aboutme');
 	}
 	
 }
