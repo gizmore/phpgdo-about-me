@@ -36,7 +36,7 @@ final class Module_AboutMe extends GDO_Module
 		];
 	}
 	
-	public function getACLDefaults() : ?array
+	public function getACLDefaults() : array
 	{
 		return [
 			'about_me' => [GDT_ACLRelation::MEMBERS, 0, null],
